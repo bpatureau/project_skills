@@ -1,5 +1,5 @@
 <?php
-define('DB_HOST','https://jdwt4n.comp.skill17.com');
+define('DB_HOST','localhost');
 define('DB_USER', 'bast');
 define('DB_PASS','password');
 define('DB_NAME','training_skills_api');
@@ -7,6 +7,12 @@ define('DB_NAME','training_skills_api');
 define('MODE','dev'); // dev ou prod
 
 define('ROOT', 'https://jdwt4n.comp.skill17.com');
+
+
+if(MODE == 'dev'):
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+endif;
 
 
 

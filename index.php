@@ -6,7 +6,7 @@
     switch ($_GET['view']) :
         case "form" :
         default :
-            include("connect.php");
+            include("home.php");
             break;
             case "panel" :
                 include("panel.php");
